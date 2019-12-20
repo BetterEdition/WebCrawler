@@ -1,7 +1,10 @@
 ﻿namespace Console
 open System
-#indent "off"
+open System.Collections.Concurrent
+open System.Collections.Generic
+open System.IO
+open System.Net
+open System.Text.RegularExpressions
 
-	module WCLogic = 
-	    
-        let start = "https://google.com/"
+module WCLogic =
+

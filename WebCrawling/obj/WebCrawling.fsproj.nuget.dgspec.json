@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jesper\\source\\repos\\WebCrawling\\WebCrawling\\WebCrawling.fsproj": {}
+    "C:\\Users\\Jesper\\Desktop\\repos\\WebCrawler\\WebCrawling\\WebCrawling.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\Jesper\\source\\repos\\WebCrawling\\WebCrawling\\WebCrawling.fsproj": {
+    "C:\\Users\\Jesper\\Desktop\\repos\\WebCrawler\\WebCrawling\\WebCrawling.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jesper\\source\\repos\\WebCrawling\\WebCrawling\\WebCrawling.fsproj",
+        "projectUniqueName": "C:\\Users\\Jesper\\Desktop\\repos\\WebCrawler\\WebCrawling\\WebCrawling.fsproj",
         "projectName": "WebCrawling",
-        "projectPath": "C:\\Users\\Jesper\\source\\repos\\WebCrawling\\WebCrawling\\WebCrawling.fsproj",
+        "projectPath": "C:\\Users\\Jesper\\Desktop\\repos\\WebCrawler\\WebCrawling\\WebCrawling.fsproj",
         "packagesPath": "C:\\Users\\Jesper\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jesper\\source\\repos\\WebCrawling\\WebCrawling\\obj\\",
+        "outputPath": "C:\\Users\\Jesper\\Desktop\\repos\\WebCrawler\\WebCrawling\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -39,6 +39,14 @@
             "FSharp.Core": {
               "target": "Package",
               "version": "[4.6.2, )"
+            },
+            "FSharp.Data": {
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.17, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",

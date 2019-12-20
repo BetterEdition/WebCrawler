@@ -8,3 +8,4 @@ C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawling\obj\Debug\netcoreapp2.2\Web
 C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawling\bin\Debug\netcoreapp2.2\WebCrawling.pdb
 C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawling\obj\Debug\netcoreapp2.2\WebCrawling.dll
 C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawling\obj\Debug\netcoreapp2.2\WebCrawling.pdb
+C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawling\obj\Debug\netcoreapp2.2\WebCrawling.fsproj.CoreCompileInputs.cache

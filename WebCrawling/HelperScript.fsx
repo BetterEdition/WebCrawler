@@ -1,10 +1,10 @@
-﻿namespace Console
-open System
+﻿open System
 open System.Collections.Concurrent
 open System.Collections.Generic
 open System.IO
 open System.Net
 open System.Text.RegularExpressions
+#r "bin/Debug/netcoreapp2.2/WebCrawling.dll"
 open FSharp.Data
 
 module Helpers =

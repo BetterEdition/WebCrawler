@@ -12,7 +12,7 @@ module Helpers =
     
 
     let rec extractRelevantLinks list =
-        let pattern2 = "(?i)^https?"
+        let pattern2 = "(?i)^https://|^http://"
         printfn "%A" list
         list |> List.filter (fun x -> Regex(pattern2).IsMatch(x))
 
@@ -23,11 +23,10 @@ module Helpers =
             |> Seq.choose (fun x -> 
                    x.TryGetAttribute("href")
                    |> Option.map (fun a -> a.Value())
-                   
-
             )
-        let newList:string list = linksList |> List.ofSeq
-        extractRelevantLinks newList
+        let newList = linksList |> List.ofSeq
+        let canBeCrawled = extractRelevantLinks newList
+        canBeCrawled
         
 
     

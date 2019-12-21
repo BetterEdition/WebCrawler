@@ -9,15 +9,12 @@ open FSharp.Data
 
 module Helpers =
 
-   
     
 
-    let rec extractRelevantLinks list host =
-        let host = "https://google.dk"
-        match list with
-        |[] -> list
-        |x::xs ->
-         if x.[0..1] = "/" then host + x :: extractRelevantLinks xs
+    let rec extractRelevantLinks list =
+        let pattern2 = "(?i)^https?"
+        printfn "%A" list
+        list |> List.filter (fun x -> Regex(pattern2).IsMatch(x))
 
     let follow_links url =
         let doc = HtmlDocument.Load(url:string)
@@ -29,7 +26,7 @@ module Helpers =
                    
 
             )
-        let newList = linksList |> List.ofSeq
+        let newList:string list = linksList |> List.ofSeq
         extractRelevantLinks newList
         
 

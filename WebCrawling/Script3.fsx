@@ -9,25 +9,15 @@ open FSharp.Data
 
 module Helpers =
 
-    let rec fix_href_links links = 
-        match links with 
-        | [] -> links
-        | x::xs -> 
+   
     
 
-    let fix_href_links2 links =
-           let pattern1 = "(?i)href\\s*=\\s*(\"|\')/?((?!#.*|/\B|" + 
-                          "mailto:|location\.|javascript:)[^\"\']+)(\"|\')"
-           let pattern2 = "(?i)^https?"
-    
-           let links =
-               [
-                   for x in Regex(pattern1).Matches(links) do
-                       yield x.Groups.[2].Value
-               ]
-               |> List.filter (fun x -> Regex(pattern2).IsMatch(x))
-           links
-
+    let rec extractRelevantLinks list host =
+        let host = "https://google.dk"
+        match list with
+        |[] -> list
+        |x::xs ->
+         if x.[0..1] = "/" then host + x :: extractRelevantLinks xs
 
     let follow_links url =
         let doc = HtmlDocument.Load(url:string)
@@ -36,9 +26,12 @@ module Helpers =
             |> Seq.choose (fun x -> 
                    x.TryGetAttribute("href")
                    |> Option.map (fun a -> a.Value())
+                   
+
             )
-        fix_href_links linksList
+        let newList = linksList |> List.ofSeq
+        extractRelevantLinks newList
+        
 
     
     follow_links "https://www.google.dk/search?q=hund"
-

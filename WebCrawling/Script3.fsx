@@ -1,4 +1,5 @@
-﻿#r "C:/Users/Jesper/.nuget/packages/fsharp.data/3.3.2/lib/net45/FSharp.Data.dll"
+﻿#I "/Users/edwinsilva/.nuget/packages/fsharp.data/3.3.2/lib/net45/"
+#r "FSharp.Data.dll"
 open System
 open System.Collections.Concurrent
 open System.Collections.Generic
@@ -9,12 +10,26 @@ open FSharp.Data
 
 module Helpers =
 
-    
+    let image_scrapper (urlLinks, originSite:string)  =
+       //printfn "list %A" list
+        let newUrls = urlLinks |> List.map(fun a-> "https://"+originSite+a)
+        for url in newUrls do
+            printf "%s" url
+            let doc = HtmlDocument.Load(url:string)
+            let images = 
+                doc.Descendants ["img"]
+                |> Seq.choose (fun x -> 
+                       x.TryGetAttribute("src")
+                       |> Option.map (fun a -> a.Value())
+                )
+            printfn "%A" images
 
-    let rec extractRelevantLinks list =
+            
+
+    let rec extractRelevantLinks list  =
         let pattern2 = "(?i)^https://|^http://"
-        printfn "%A" list
-        list |> List.filter (fun x -> Regex(pattern2).IsMatch(x))
+       //printfn "list %A" list
+        list |> List.filter (fun x -> Regex(pattern2).IsMatch(x))  
 
     let follow_links url =
         let doc = HtmlDocument.Load(url:string)
@@ -25,9 +40,22 @@ module Helpers =
                    |> Option.map (fun a -> a.Value())
             )
         let newList = linksList |> List.ofSeq
-        let canBeCrawled = extractRelevantLinks newList
-        canBeCrawled
-        
+        //printfn "newList %A" newList 
 
-    
-    follow_links "https://www.google.dk/search?q=hund"
+        let originURL = url.Split "/"
+        let originPath =  originURL.[2]
+
+        let canBeCrawled = extractRelevantLinks newList 
+        image_scrapper (newList, originPath)
+
+        //printfn "canBeCrawled %A" canBeCrawled 
+
+        canBeCrawled
+
+       
+
+
+   
+
+
+    follow_links "https://www.guloggratis.dk/dyr/hunde/hunde/"

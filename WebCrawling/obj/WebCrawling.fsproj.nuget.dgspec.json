@@ -1,30 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jesper\\Desktop\\repos\\WebCrawler\\WebCrawling\\WebCrawling.fsproj": {}
+    "/Users/edwinsilva/Desktop/WebCrawler/WebCrawling/WebCrawling.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\Jesper\\Desktop\\repos\\WebCrawler\\WebCrawling\\WebCrawling.fsproj": {
+    "/Users/edwinsilva/Desktop/WebCrawler/WebCrawling/WebCrawling.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jesper\\Desktop\\repos\\WebCrawler\\WebCrawling\\WebCrawling.fsproj",
+        "projectUniqueName": "/Users/edwinsilva/Desktop/WebCrawler/WebCrawling/WebCrawling.fsproj",
         "projectName": "WebCrawling",
-        "projectPath": "C:\\Users\\Jesper\\Desktop\\repos\\WebCrawler\\WebCrawling\\WebCrawling.fsproj",
-        "packagesPath": "C:\\Users\\Jesper\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jesper\\Desktop\\repos\\WebCrawler\\WebCrawling\\obj\\",
+        "projectPath": "/Users/edwinsilva/Desktop/WebCrawler/WebCrawling/WebCrawling.fsproj",
+        "packagesPath": "/Users/edwinsilva/.nuget/packages/",
+        "outputPath": "/Users/edwinsilva/Desktop/WebCrawler/WebCrawling/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jesper\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/edwinsilva/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,10 +58,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

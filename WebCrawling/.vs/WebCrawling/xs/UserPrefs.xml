@@ -2,19 +2,15 @@
   <MonoDevelop.Ide.ItemProperties.WebCrawling PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Script3.fsx">
     <Files>
-      <File FileName="Script3.fsx" Line="29" Column="67" />
+      <File FileName="Script3.fsx" Line="39" Column="53" />
       <File FileName="Program.fs" Line="1" Column="1" />
       <File FileName="WCLogic.fs" Line="11" Column="1" />
-      <File FileName="Helpers.fs" Line="19" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebCrawling" expanded="True">
             <Node name="WebCrawling" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
               <Node name="Script3.fsx" selected="True" />
             </Node>
           </Node>

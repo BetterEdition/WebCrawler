@@ -1,8 +1,0 @@
-C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawler\bin\Debug\netstandard2.0\WebCrawler.deps.json
-C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawler\bin\Debug\netstandard2.0\WebCrawler.dll
-C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawler\obj\Debug\netstandard2.0\WebCrawler.fsprojAssemblyReference.cache
-C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawler\obj\Debug\netstandard2.0\WebCrawler.AssemblyInfoInputs.cache
-C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawler\obj\Debug\netstandard2.0\WebCrawler.AssemblyInfo.fs
-C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawler\bin\Debug\netstandard2.0\WebCrawler.pdb
-C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawler\obj\Debug\netstandard2.0\WebCrawler.dll
-C:\Users\Jesper\Desktop\repos\WebCrawler\WebCrawler\obj\Debug\netstandard2.0\WebCrawler.pdb
